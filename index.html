@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<div id="header">
+
+     <div class="container">
+        <nav>
+
+          <img src="log.png" id ="im" class="logo">
+           <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+           </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+
+       <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I'm <span>Abhishek Sharma</span></h1>
+       </div>
+<!-- about--->
+       <div id ="about">
+          <div class=""container>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ima1.jpg" id="profileimg">
+                </div>
+                <div class="about-col-2">
+                  <h1 class="subtitle">About me</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo illum iure, vero voluptatibus officiis veritatis quia quas reprehenderit sunt placeat, ut nam quibusdam. Corporis perferendis at doloribus beatae placeat ducimus!</p>
+              
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages <br></span>Java, JavaScript, Bootstrap, MediaQuery, Html, Css, OOPs, Data Structures</li><br>
+                        <li><span>Frameworks <br></span>ReactJs ,NodeJs ,SpringBoot ,Hibernate </li><br>
+                        <li><span>Database <br></span>Mysql ,MongoDb</li><br>
+                        <li><span>Developer Tools <br></span>Github ,Vs Code ,IntelliJ ,Postman ,Ecllipse</li>
+                    </ul>
+                   </div>
+
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-Current <br></span><br> <pre>(Infosys)<br>Working as full a stack developer</pre> </li>
+                        <li><span>2020-2021 <br></span><br>(S.O Infotech) <br>Worked on website of Infotech ,added features like submitting form,login page and made user experience better. <br>Created UI’s for company’s product websites and integrating Apis in frontend.</li>
+                        <li><span>2020-2020 <br></span><br>Tutor (Chegg.com) <br>Solved more than 400 questions and helped students in doubts of data structures and other computer programming subjects.</li>
+                    </ul>
+                   </div>
+
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2021</span><br>Btech(Eic) <br>JcBose Ymca University Of Tech(Faridabad)</li>
+                        <li><span>2015-2016</span><br>12TH <br>Yaduvanshi Shiksha Niketan (M/Garh)</li>
+                        <li><span>2013-2014</span><br>10TH <br>Yaduvanshi Shiksha Niketan (M/Garh)</li>
+                    </ul>
+                   </div>
+
+                </div>
+
+            </div>
+          </div>
+
+       </div>
+        
+     
+     </div>
+ </div>
+  <!---about close
+my Work start-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><span id="my">My Work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" alt="">
+                <div class="layer">
+                    <h3>APP</h3>
+                    <p>description</p>
+                    <a href="#" target=”_blank”><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imge2.jpg" alt="">
+                <div class="layer">
+                    <h3>KeepNotes</h3>
+                    <p>description</p>
+                    <a href="https://abhishek989156.github.io/KeepNote/" target=”_blank”><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png" alt="">
+                <div class="layer">
+                    <h3>Guessing Game</h3>
+                    <p>description</p>
+                    <a href="https://abhishek989156.github.io/Guessing-Game/" target=”_blank”><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+  <!---
+contact start-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> abhisheksharma09500@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9891569310</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/" target=”_blank” ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Abhishek989156" target=”_blank” ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/" target=”_blank” ><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <a href="AbhishekSharmaCV.pdf" target="_blank" class="btn btn2">Download CV</a>
+                
+                
+            </div>
+            
+
+            <div class="contact-right">
+                
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+ 
+
+ <script>
+    /*about*/
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    /*about close*/
+    /*menu*/
+  
+
+
+ </script>
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemenu.style.right="0";
+    }
+    function closemenu()
+    {
+        sidemenu.style.right="-200px";
+    }
+ </script>
+    
+</body>
+</html>
